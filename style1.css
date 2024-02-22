@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0 );
+    border-top: 5px solid goldenrod;
+    border-bottom: 5px solid goldenrod;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.todo__value{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: cursive;
+    font-size: 1em;
+    font-weight: 400;
+    flex-grow: 1;
+}
+.todo:has(.todo__checkbox:checked){
+         color: #555555;
+         background: #eeeeee;
+         text-decoration: line-through;
+         order: 1;
+}
